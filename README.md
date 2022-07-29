@@ -1,4 +1,4 @@
-* For testing is used [Jest](https://github.com/facebook/jest)
+* For testing  [Jest](https://github.com/facebook/jest)
 
 Available scripts:
 
