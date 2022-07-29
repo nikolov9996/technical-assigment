@@ -6,4 +6,4 @@ Available scripts:
 - npm run start
 - npm run test
 
-* Expected output: [output.json](/technical-assignment/output.json)
+* Expected output: [output.json](/output.json)
