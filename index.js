@@ -53,12 +53,15 @@ function guestsToInvite(partners) {
     const partner = partners[i];
     const { latitude, longitude } = partner;
     const distance = haversineFormula(latitude, longitude);
-    if (distance && distance <= 100)
-      invitedPartners.push(partner);
+    if (distance && distance <= 100) invitedPartners.push(partner);
   }
   invitedPartners.sort((a, b) => a.partner_id - b.partner_id);
 
-  return invitedPartners;
+  const result = invitedPartners.map(
+    (partner) => `${partner.name}, ${partner.partner_id}`
+  );
+
+  return result;
 }
 
 console.log(guestsToInvite(partners));
